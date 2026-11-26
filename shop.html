@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Shop | Batik Adinata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav"><a class="brand" href="index.html">Batik Adinata<small>Warisan Nusantara</small></a>
+            <nav class="navlinks"><a class="" href="index.html">Home</a><a class="" href="about.html">About</a><a
+                    class="active" href="shop.html">Shop</a><a class="" href="gallery.html">Gallery</a><a class=""
+                    href="blog.html">Blog</a><a class="" href="contact.html">Contact</a></nav>
+        </div>
+    </header>
+    <main>
+        <style>
+/* ===== SHOP BATIK ADINATA ===== */
+
+.shop-modern {
+    background: #f4eee4;
+    padding: 65px 30px 80px;
+    font-family: Arial, sans-serif;
+}
+
+.shop-modern * {
+    box-sizing: border-box;
+}
+
+.shop-modern-inner {
+    max-width: 1180px;
+    margin: auto;
+}
+
+.shop-modern-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.shop-modern-tag {
+    display: inline-block;
+    color: #8b704d;
+    background: #e8dcc8;
+    padding: 10px 22px;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.shop-modern-header h1 {
+    color: #493728;
+    font-size: 42px;
+    margin: 22px 0;
+}
+
+.shop-modern-header p {
+    color: #766655;
+    font-size: 17px;
+    line-height: 1.9;
+    max-width: 850px;
+    margin: auto;
+}
+
+.shop-modern-divider {
+    width: 65px;
+    height: 3px;
+    background: #ad8c5c;
+    margin: 25px auto;
+}
+
+.shop-modern-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.shop-modern-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(65, 45, 25, .10);
+    transition: .3s;
+}
+
+.shop-modern-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 32px rgba(65, 45, 25, .17);
+}
+
+.shop-modern-image {
+    height: 310px;
+    overflow: hidden;
+    background: #e7ddce;
+}
+
+.shop-modern-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .4s;
+}
+
+.shop-modern-card:hover .shop-modern-image img {
+    transform: scale(1.06);
+}
+
+.shop-modern-content {
+    padding: 28px 24px 32px;
+    text-align: center;
+}
+
+.shop-modern-number {
+    color: #ae9166;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.shop-modern-content h2 {
+    color: #493728;
+    font-size: 23px;
+    line-height: 1.5;
+    margin: 0 0 18px;
+}
+
+.shop-modern-content p {
+    color: #766655;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.shop-modern-line {
+    height: 2px;
+    width: 45px;
+    background: #bd9b6a;
+    margin: 22px auto 0;
+}
+
+@media(max-width:850px) {
+    .shop-modern-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:600px) {
+    .shop-modern {
+        padding: 40px 18px;
+    }
+
+    .shop-modern-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .shop-modern-header h1 {
+        font-size: 30px;
+    }
+
+    .shop-modern-header p {
+        font-size: 15px;
+    }
+
+    .shop-modern-image {
+        height: 280px;
+    }
+}
+/* ===== BANNER SHOP BATIK ADINATA ===== */
+.shop-banner {
+    position: relative;
+    min-height: 500px;
+    margin: -65px -30px 55px;
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(35, 18, 10, 0.82),
+            rgba(48, 27, 15, 0.48),
+            rgba(35, 18, 10, 0.20)
+        ),
+        url("images/banner-shop-baru.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Ornamen bingkai emas */
+.shop-banner::before {
+    content: "";
+    position: absolute;
+    inset: 22px;
+    border: 1px solid rgba(213, 170, 105, 0.55);
+    pointer-events: none;
+}
+
+/* Ornamen dekoratif */
+.shop-banner::after {
+    content: "✦  ❖  ✦";
+    position: absolute;
+    bottom: 45px;
+    left: 7%;
+    color: #d5aa69;
+    font-size: 22px;
+    letter-spacing: 12px;
+}
+
+/* Isi banner */
+.shop-banner-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    color: #fff;
+}
+
+.shop-banner-tag {
+    display: block;
+    color: #d5aa69;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+}
+
+.shop-banner h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(42px, 6vw, 82px);
+    font-weight: normal;
+    line-height: 1.1;
+    margin: 0 0 25px;
+    color: #fff;
+}
+
+.shop-banner-divider {
+    width: 85px;
+    height: 3px;
+    background: #c99b58;
+    margin-bottom: 25px;
+}
+
+.shop-banner p {
+    max-width: 700px;
+    color: #f5e9d9;
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 0;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    .shop-banner {
+        margin: -40px -18px 40px;
+        min-height: 400px;
+        padding: 65px 28px;
+        background-position: center;
+    }
+
+    .shop-banner::before {
+        inset: 12px;
+    }
+
+    .shop-banner-tag {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .shop-banner h1 {
+        font-size: 42px;
+    }
+
+    .shop-banner p {
+        font-size: 15px;
+    }
+
+    .shop-banner::after {
+        bottom: 30px;
+        font-size: 16px;
+    }
+    .product-price {
+    font-size: 22px !important;
+    font-weight: 800 !important;
+    color: #A87932 !important;
+    margin: 12px 0 18px !important;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+}
+/* FOOTER BATIK ADINATA */
+footer {
+    background: #321d12;
+    color: #fff;
+    padding: 55px 0 25px;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 0.8fr;
+    gap: 35px;
+}
+
+.footer-inner > div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-inner b {
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer-inner p {
+    color: #e5c8a5;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.footer-inner a {
+    color: #e5c8a5;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-inner a:hover {
+    color: #fff;
+}
+
+footer .copyright {
+    text-align: center;
+    border-top: 1px solid #71513c;
+    margin-top: 35px;
+    padding-top: 20px;
+    color: #e5c8a5;
+}
+
+@media (max-width: 768px) {
+    .footer-inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-inner {
+        grid-template-columns: 1fr;
+    }
+}
+/* ===== TAMBAHAN: KERANJANG & CHECKOUT ===== */
+.shop-modern-content .product-price{font-size:22px;font-weight:800;color:#A87932;margin:12px 0 18px;text-align:center}
+
+.product-size-row{display:flex;align-items:center;justify-content:center;gap:10px;margin:20px 0 14px}
+.product-size-row label{color:#766655;font-size:14px;font-weight:bold}
+.product-size-row select{padding:9px 14px;border:1px solid #d9c9b0;border-radius:8px;background:#fbf7f0;color:#493728;font-size:14px;cursor:pointer}
+
+.btn-cart{display:inline-block;width:100%;padding:13px 18px;border:none;border-radius:10px;background:#493728;color:#fff;font-size:15px;font-weight:bold;cursor:pointer;transition:background .25s}
+.btn-cart:hover{background:#A87932}
+
+.cart-fab{position:fixed;right:22px;bottom:22px;z-index:900;display:flex;align-items:center;gap:10px;padding:14px 22px;border:none;border-radius:40px;background:#321d12;color:#fff;font-size:15px;font-weight:bold;cursor:pointer;box-shadow:0 8px 22px rgba(35,18,10,.35)}
+.cart-badge{min-width:24px;height:24px;padding:0 7px;border-radius:12px;background:#d5aa69;color:#321d12;font-size:13px;line-height:24px;text-align:center}
+
+.overlay{position:fixed;inset:0;z-index:950;background:rgba(35,18,10,.55);opacity:0;visibility:hidden;transition:.25s}
+.overlay.open{opacity:1;visibility:visible}
+
+.cart-drawer{position:fixed;top:0;right:0;z-index:960;width:min(440px,100%);height:100%;display:flex;flex-direction:column;background:#fbf7f0;box-shadow:-10px 0 30px rgba(35,18,10,.25);transform:translateX(100%);transition:transform .3s;font-family:Arial,sans-serif}
+.cart-drawer.open{transform:translateX(0)}
+.cart-head{display:flex;align-items:center;justify-content:space-between;padding:22px 24px;border-bottom:1px solid #e3d6c1}
+.cart-head h3{margin:0;color:#493728;font-size:21px}
+.cart-close{width:38px;height:38px;border:none;border-radius:50%;background:#e8dcc8;color:#493728;font-size:20px;cursor:pointer}
+.cart-items{flex:1;overflow-y:auto;padding:18px 24px}
+.cart-empty{margin-top:60px;text-align:center;color:#766655;line-height:1.8}
+.cart-item{display:grid;grid-template-columns:70px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid #e8dcc8}
+.cart-item img{width:70px;height:70px;object-fit:cover;border-radius:10px}
+.cart-item-name{margin:0 0 4px;color:#493728;font-size:16px;font-weight:bold}
+.cart-item-meta{margin:0 0 10px;color:#766655;font-size:13px}
+.cart-item-row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.qty-control{display:inline-flex;align-items:center;border:1px solid #d9c9b0;border-radius:8px;overflow:hidden;background:#fff}
+.qty-control button{width:32px;height:32px;border:none;background:transparent;color:#493728;font-size:17px;cursor:pointer}
+.qty-control{display:inline-flex;align-items:center;border:1px solid #d9c9b0;border-radius:8px;overflow:hidden;background:#fff}
+.qty-control button{width:32px;height:32px;border:none;background:transparent;color:#493728;font-size:17px;cursor:pointer}
+.qty-control span{min-width:34px;text-align:center;color:#493728;font-weight:bold}
+.cart-item-subtotal{color:#A87932;font-weight:bold}
+.cart-remove{margin-top:8px;padding:0;border:none;background:none;color:#a14b3b;font-size:13px;text-decoration:underline;cursor:pointer}
+.cart-foot{padding:20px 24px 26px;border-top:1px solid #e3d6c1;background:#f4eee4}
+.cart-total{display:flex;justify-content:space-between;margin-bottom:16px;color:#493728;font-size:18px;font-weight:bold}
+.btn-checkout{width:100%;padding:14px;border:none;border-radius:10px;background:#A87932;color:#fff;font-size:16px;font-weight:bold;cursor:pointer}
+.btn-checkout:disabled{background:#cdbfa8;cursor:not-allowed}
+
+.checkout-modal{position:fixed;inset:0;z-index:970;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;transition:.25s;font-family:Arial,sans-serif}
+.checkout-modal.open{opacity:1;visibility:visible}
+.checkout-box{width:min(720px,100%);max-height:92vh;overflow-y:auto;padding:30px;border-radius:16px;background:#fbf7f0;box-shadow:0 20px 50px rgba(35,18,10,.4)}
+.checkout-box h3{margin:0 0 6px;color:#493728;font-size:24px}
+.checkout-box .sub{margin:0 0 22px;color:#766655;font-size:14px}
+.checkout-table-wrap{overflow-x:auto;margin-bottom:22px}
+.checkout-table{width:100%;min-width:520px;border-collapse:collapse;font-size:14px}
+.checkout-table th{padding:10px 8px;background:#e8dcc8;color:#493728;text-align:left}
+.checkout-table td{padding:10px 8px;border-bottom:1px solid #e8dcc8;color:#493728}
+.checkout-table .num{text-align:right}
+.checkout-table tfoot td{border-bottom:none;font-weight:bold;font-size:16px;color:#A87932}
+.checkout-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.checkout-form .full{grid-column:1/-1}
+.checkout-form label{display:block;margin-bottom:6px;color:#493728;font-size:14px;font-weight:bold}
+.checkout-form input,.checkout-form textarea{width:100%;padding:12px 14px;border:1px solid #d9c9b0;border-radius:8px;background:#fff;color:#493728;font-family:inherit;font-size:15px;box-sizing:border-box}
+.checkout-form textarea{min-height:90px;resize:vertical}
+.checkout-actions{display:flex;gap:12px}
+.checkout-actions button{flex:1;padding:14px;border:none;border-radius:10px;font-size:15px;font-weight:bold;cursor:pointer}
+.btn-back{background:#e8dcc8;color:#493728}
+.btn-submit{background:#25865a;color:#fff}
+
+.toast{position:fixed;left:50%;bottom:90px;z-index:1000;padding:12px 22px;border-radius:30px;background:#321d12;color:#fff;font-family:Arial,sans-serif;font-size:14px;transform:translate(-50%,20px);opacity:0;pointer-events:none;transition:.25s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+.shop-modern-content .product-order-btn{display:block;width:100%;margin-top:10px;padding:13px 18px;border:2px solid #493728;border-radius:10px;background:transparent;color:#493728;font-size:15px;font-weight:bold;text-align:center;text-decoration:none;box-sizing:border-box;transition:.25s}
+.shop-modern-content .product-order-btn:hover{background:#493728;color:#fff}
+
+@media(max-width:600px){
+  .checkout-form{grid-template-columns:1fr}
+  .checkout-box{padding:22px 18px}
+  .cart-fab{right:14px;bottom:16px}
+}
+.shop-modern-content .product-order-btn{margin-top:16px;margin-bottom:14px}
+.shop-modern-content .btn-cart{margin-top:0}
+</style>
+
+<section class="shop-modern">
+    <div class="shop-modern-inner">
+
+        <div class="shop-banner">
+
+    <div class="shop-banner-content">
+
+        <span class="shop-banner-tag">
+            KATALOG PRODUK
+        </span>
+
+        <h1>Koleksi Batik Pilihan</h1>
+
+        <div class="shop-banner-divider"></div>
+
+        <p>
+            Temukan keindahan batik Indonesia melalui beragam motif
+            dan corak yang memiliki ciri khas tersendiri. Setiap motif
+            mencerminkan kekayaan budaya, kreativitas, dan nilai
+            tradisi Nusantara.
+        </p>
+
+    </div>
+
+</div>
+
+            <span class="shop-modern-tag">
+                BATIK ADINATA COLLECTION
+            </span>
+
+            <h1>Koleksi Produk Batik Adinata</h1>
+
+            <div class="shop-modern-divider"></div>
+
+            <p>
+                Temukan keindahan batik Indonesia melalui beragam motif
+                dan corak yang memiliki ciri khas tersendiri. Setiap motif
+                mencerminkan kekayaan budaya, kreativitas, dan nilai tradisi Nusantara.
+            </p>
+
+        </div>
+
+        <div class="shop-modern-grid">
+
+            <!-- PRODUK 1 -->
+            <article class="shop-modern-card">
+
+                <div class="shop-modern-image">
+                    <img src="images/udeng-print-cabut.jpeg"
+                         alt="Udeng Print Cabut">
+                </div>
+
+                <div class="shop-modern-content">
+
+                    <div class="shop-modern-number">
+                        KOLEKSI 01
+                    </div>
+
+                    <h2>Udeng Print Cabut</h2>
+                    <p class="product-price">Rp26.000</p>
+
+                    <p>
+                        Udeng bermotif batik dengan teknik print cabut
+                        yang menghadirkan tampilan khas dan menarik.
+                    </p>
+                    <a
+    href="https://wa.me/6285878153381?text=Halo%20Batik%20Adinata,%20saya%20ingin%20memesan%20Udeng%20Print%20Cabut%20dengan%20harga%20Rp26.000."
+    class="product-order-btn"
+    target="_blank"
+    rel="noopener noreferrer">
+    Pesan Sekarang ↗
+</a>
+
+<button type="button" class="btn-cart" data-add="udeng-cabut">+ Tambah ke Keranjang</button>
+
+                    <div class="shop-modern-line"></div>
+
+                </div>
+            </article>
+
+
+            <!-- PRODUK 2 -->
+            <article class="shop-modern-card">
+
+                <div class="shop-modern-image">
+                    <img src="images/udeng-print-malam.jpeg"
+                         alt="Udeng Print Malam">
+                </div>
+
+                <div class="shop-modern-content">
+
+                    <div class="shop-modern-number">
+                        KOLEKSI 02
+                    </div>
+
+                    <h2>Udeng Print Malam</h2>
+                    <p class="product-price">Rp31.000</p>
+
+                    <p>
+                        Udeng dengan motif batik teknik print malam
+                        yang memiliki karakter motif tradisional.
+                    </p>
+                    <a
+    href="https://wa.me/6285878153381?text=Halo%20Batik%20Adinata,%20saya%20ingin%20memesan%20Udeng%20Print%20Malam%20dengan%20harga%20Rp31.000."
+    class="product-order-btn"
+    target="_blank"
+    rel="noopener noreferrer">
+    Pesan Sekarang ↗
+</a>
+
+<button type="button" class="btn-cart" data-add="udeng-malam">+ Tambah ke Keranjang</button>
+                    <div class="shop-modern-line"></div>
+
+                </div>
+            </article>
+
+
+            <!-- PRODUK 3 -->
+            <article class="shop-modern-card">
+
+                <div class="shop-modern-image">
+                    <img src="images/kain-batik-untuk-seragam.jpeg"
+                         alt="Kain Batik untuk Seragam">
+                </div>
+
+                <div class="shop-modern-content">
+
+                    <div class="shop-modern-number">
+                        KOLEKSI 03
+                    </div>
+
+                    <h2>Kain Batik untuk Seragam</h2>
+                    <p class="product-price">Rp25.000</p>
+
+                    <p>
+                        Kain batik untuk kebutuhan seragam dengan
+                        pilihan motif dan corak yang menarik.
+                    </p>
+                    <a
+    href="https://wa.me/6285878153381?text=Halo%20Batik%20Adinata,%20saya%20ingin%20memesan%20Batik%20untuk%20Seragam%20dengan%20harga%20Rp25.000."
+    class="product-order-btn"
+    target="_blank"
+    rel="noopener noreferrer">
+    Pesan Sekarang ↗
+</a>
+
+<button type="button" class="btn-cart" data-add="kain-seragam">+ Tambah ke Keranjang</button>
+
+                    <div class="shop-modern-line"></div>
+
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- KATEGORI KOLEKSI BATIK -->
+<section class="shop-category-section">
+    <div class="shop-category-heading">
+        <span>KOLEKSI BATIK ADINATA</span>
+        <h2>Temukan Koleksi Pilihan Kami</h2>
+        <p>
+            Setiap koleksi memiliki karakter dan keunikan
+            tersendiri yang mencerminkan keindahan batik Nusantara.
+        </p>
+    </div>
+
+    <div class="shop-category-grid">
+
+        <div class="shop-category-card">
+            <div class="category-icon">✦</div>
+            <h3>Udeng Print Cabut</h3>
+            <p>
+                Koleksi udeng dengan teknik print cabut
+                yang menghadirkan motif khas dan menarik.
+            </p>
+        </div>
+
+        <div class="shop-category-card">
+            <div class="category-icon">❖</div>
+            <h3>Udeng Print Malam</h3>
+            <p>
+                Koleksi udeng dengan teknik print malam
+                yang memiliki karakter motif tradisional.
+            </p>
+        </div>
+
+        <div class="shop-category-card">
+            <div class="category-icon">✧</div>
+            <h3>Kain Batik Seragam</h3>
+            <p>
+                Pilihan kain batik untuk kebutuhan seragam
+                dengan beragam motif dan corak.
+            </p>
+        </div>
+
+    </div>
+</section>
+<!-- ===== KERANJANG & CHECKOUT ===== -->
+<button type="button" class="cart-fab" id="cartFab" aria-label="Buka keranjang">
+    🛒 Keranjang <span class="cart-badge" id="cartBadge">0</span>
+</button>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head">
+        <h3>Keranjang Belanja</h3>
+        <button type="button" class="cart-close" id="cartClose" aria-label="Tutup">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-foot">
+        <div class="cart-total"><span>Total</span><span id="cartTotal">Rp0</span></div>
+        <button type="button" class="btn-checkout" id="btnCheckout" disabled>Checkout</button>
+    </div>
+</aside>
+
+<div class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true">
+    <div class="checkout-box">
+        <h3>Formulir Checkout</h3>
+        <p class="sub">Periksa pesanan, lengkapi data pengiriman, lalu kirim lewat WhatsApp.</p>
+
+        <div class="checkout-table-wrap">
+            <table class="checkout-table">
+                <thead>
+                    <tr>
+    <th>Nama Produk</th>
+    <th class="num">Qty</th><th class="num">Harga</th><th class="num">Subtotal</th>
+</tr>
+                </thead>
+                <tbody id="checkoutRows"></tbody>
+                <tfoot>
+                    <tr><td colspan="3">Total Pembayaran</td><td class="num" id="checkoutTotal">Rp0</td></tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <form class="checkout-form" id="checkoutForm" novalidate>
+            <div>
+                <label for="fNama">Nama Pemesan</label>
+                <input type="text" id="fNama" placeholder="Nama lengkap" required>
+            </div>
+            <div>
+                <label for="fHp">No. WhatsApp</label>
+                <input type="tel" id="fHp" placeholder="08xxxxxxxxxx" required>
+            </div>
+            <div class="full">
+                <label for="fTanggal">Tanggal Pemesanan</label>
+                <input type="date" id="fTanggal" required>
+            </div>
+            <div class="full">
+                <label for="fAlamat">Alamat Pengiriman</label>
+                <textarea id="fAlamat" placeholder="Jalan, RT/RW, kelurahan, kecamatan, kota, kode pos" required></textarea>
+            </div>
+            <div class="full checkout-actions">
+                <button type="button" class="btn-back" id="btnBack">← Kembali</button>
+                <button type="submit" class="btn-submit">Kirim Pesanan via WhatsApp</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function () {
+    'use strict';
+
+    /* DATA PRODUK: edit harga, size, dan nomor WA di sini */
+    var WA_NUMBER = '6285878153381';
+    var PRODUCTS = {
+        'udeng-cabut':  { name: 'Udeng Print Cabut',        price: 26000, img: 'images/udeng-print-cabut.jpeg',        sizes: ['All Size','S','M','L'] },
+        'udeng-malam':  { name: 'Udeng Print Malam',        price: 31000, img: 'images/udeng-print-malam.jpeg',        sizes: ['All Size','S','M','L'] },
+        'kain-seragam': { name: 'Kain Batik untuk Seragam', price: 25000, img: 'images/kain-batik-untuk-seragam.jpeg', sizes: ['S','M','L','XL'] }
+    };
+    var STORAGE_KEY = 'batikAdinataCart';
+    var cart = []; // [{id, size, qty}]
+
+    var $ = function (id) { return document.getElementById(id); };
+    var drawer = $('cartDrawer'), overlay = $('overlay'), modal = $('checkoutModal');
+    var itemsEl = $('cartItems'), totalEl = $('cartTotal'), badgeEl = $('cartBadge');
+    var btnCheckout = $('btnCheckout'), toastEl = $('toast');
+
+    function rupiah(n) { return 'Rp' + n.toLocaleString('id-ID'); }
+    function todayISO() {
+        var d = new Date();
+        d.setMinutes(d.getMinutes() - d.getTimezoneOffset());
+        return d.toISOString().slice(0, 10);
+    }
+    function formatTanggal(iso) { var p = iso.split('-'); return p[2] + '/' + p[1] + '/' + p[0]; }
+    function toast(msg) {
+        toastEl.textContent = msg;
+        toastEl.classList.add('show');
+        clearTimeout(toast.t);
+        toast.t = setTimeout(function () { toastEl.classList.remove('show'); }, 1800);
+    }
+    function save() { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(cart)); } catch (e) {} }
+    function load() {
+        try {
+            var data = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+            cart = data.filter(function (i) { return PRODUCTS[i.id] && i.qty > 0; });
+        } catch (e) { cart = []; }
+    }
+    function total() {
+        return cart.reduce(function (s, i) { return s + PRODUCTS[i.id].price * i.qty; }, 0);
+    }
+
+    /* Isi pilihan size */
+    Object.keys(PRODUCTS).forEach(function (id) {
+        var sel = $('size-' + id);
+        if (!sel) return;
+        sel.innerHTML = PRODUCTS[id].sizes.map(function (s) {
+            return '<option value="' + s + '">' + s + '</option>';
+        }).join('');
+    });
+
+    function addToCart(id) {
+    var found = cart.filter(function (i) { return i.id === id; })[0];
+    if (found) { found.qty += 1; } else { cart.push({ id: id, qty: 1 }); }
+    save(); render();
+    toast(PRODUCTS[id].name + ' masuk keranjang');
+}
+    function changeQty(index, delta) {
+        cart[index].qty += delta;
+        if (cart[index].qty <= 0) cart.splice(index, 1);
+        save(); render();
+    }
+    function removeItem(index) { cart.splice(index, 1); save(); render(); }
+
+    function render() {
+        var count = cart.reduce(function (s, i) { return s + i.qty; }, 0);
+        badgeEl.textContent = count;
+        totalEl.textContent = rupiah(total());
+        btnCheckout.disabled = cart.length === 0;
+
+        if (!cart.length) {
+            itemsEl.innerHTML = '<div class="cart-empty">Keranjang masih kosong.<br>Pilih produk lalu tekan “Tambah ke Keranjang”.</div>';
+            return;
+        }
+        itemsEl.innerHTML = cart.map(function (item, idx) {
+            var p = PRODUCTS[item.id];
+            return '<div class="cart-item">' +
+                '<img src="' + p.img + '" alt="' + p.name + '">' +
+                '<div>' +
+                '<p class="cart-item-name">' + p.name + '</p>' +
+                '<p class="cart-item-meta">Size: ' + item.size + ' · ' + rupiah(p.price) + '</p>' +
+                '<div class="cart-item-row">' +
+                '<div class="qty-control">' +
+                '<button type="button" data-minus="' + idx + '" aria-label="Kurangi">−</button>' +
+                '<span>' + item.qty + '</span>' +
+                '<button type="button" data-plus="' + idx + '" aria-label="Tambah">+</button>' +
+                '</div>' +
+                '<span class="cart-item-subtotal">' + rupiah(p.price * item.qty) + '</span>' +
+                '</div>' +
+                '<button type="button" class="cart-remove" data-remove="' + idx + '">Hapus</button>' +
+                '</div></div>';
+        }).join('');
+    }
+
+    function openCart() {
+        drawer.classList.add('open'); overlay.classList.add('open');
+        drawer.setAttribute('aria-hidden', 'false');
+    }
+    function closeAll() {
+        drawer.classList.remove('open'); modal.classList.remove('open'); overlay.classList.remove('open');
+        drawer.setAttribute('aria-hidden', 'true');
+    }
+    function openCheckout() {
+        if (!cart.length) return;
+        $('checkoutRows').innerHTML = cart.map(function (item) {
+            var p = PRODUCTS[item.id];
+            return '<tr><td>' + p.name + '</td><td>' + item.size + '</td>' +
+                '<td class="num">' + item.qty + '</td>' +
+                '<td class="num">' + rupiah(p.price) + '</td>' +
+                '<td class="num">' + rupiah(p.price * item.qty) + '</td></tr>';
+        }).join('');
+        $('checkoutTotal').textContent = rupiah(total());
+        if (!$('fTanggal').value) $('fTanggal').value = todayISO();
+        drawer.classList.remove('open');
+        modal.classList.add('open');
+        overlay.classList.add('open');
+    }
+
+    function submitOrder(e) {
+        e.preventDefault();
+        var nama = $('fNama').value.trim(), hp = $('fHp').value.trim();
+        var tanggal = $('fTanggal').value, alamat = $('fAlamat').value.trim();
+        if (!nama || !hp || !tanggal || !alamat) { toast('Lengkapi semua data formulir dulu ya'); return; }
+
+        var lines = ['Halo Batik Adinata, saya ingin memesan:', ''];
+        cart.forEach(function (item, i) {
+            var p = PRODUCTS[item.id];
+            lines.push((i + 1) + '. ' + p.name);
+            lines.push('   Size: ' + item.size);
+            lines.push('   Qty: ' + item.qty + ' x ' + rupiah(p.price) + ' = ' + rupiah(p.price * item.qty));
+        });
+        lines.push('', 'Total: ' + rupiah(total()), '');
+        lines.push('Nama: ' + nama);
+        lines.push('No. WhatsApp: ' + hp);
+        lines.push('Tanggal Pemesanan: ' + formatTanggal(tanggal));
+        lines.push('Alamat Pengiriman: ' + alamat);
+
+        window.open('https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
+
+        cart = []; save(); render();
+        $('checkoutForm').reset();
+        closeAll();
+        toast('Pesanan dikirim ke WhatsApp');
+    }
+
+    document.addEventListener('click', function (e) {
+        var t = e.target;
+        if (t.dataset.add) return addToCart(t.dataset.add);
+        if (t.dataset.plus !== undefined) return changeQty(+t.dataset.plus, 1);
+        if (t.dataset.minus !== undefined) return changeQty(+t.dataset.minus, -1);
+        if (t.dataset.remove !== undefined) return removeItem(+t.dataset.remove);
+    });
+    $('cartFab').addEventListener('click', openCart);
+    $('cartClose').addEventListener('click', closeAll);
+    overlay.addEventListener('click', closeAll);
+    btnCheckout.addEventListener('click', openCheckout);
+    $('btnBack').addEventListener('click', function () { modal.classList.remove('open'); drawer.classList.add('open'); });
+    $('checkoutForm').addEventListener('submit', submitOrder);
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAll(); });
+
+    load();
+    render();
+})();
+</script>
+    </main>
+    
+<footer class="site-footer">
+    <div class="container footer-inner">
+
+        <!-- KOLOM 1: BRAND -->
+        <div class="footer-brand">
+            <a href="index.html" class="footer-logo">
+                Batik Adinata
+            </a>
+            <span class="footer-subtitle">WARISAN NUSANTARA</span>
+
+            <p>
+                Merayakan tradisi dalam gaya masa kini.
+                Keindahan batik Indonesia dalam setiap motif.
+            </p>
+        </div>
+
+        <!-- KOLOM 2: JELAJAHI -->
+        <div class="footer-column">
+            <b>Jelajahi</b>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- KOLOM 3: INFORMASI -->
+        <div class="footer-column">
+            <b>Informasi</b>
+
+           
+<a
+    href="https://www.google.com/maps/search/?api=1&query=BATIK%20ADINATA%2C%20GW92%2BPV6%2C%20Kds%20III%2C%20Sidodadi%2C%20Masaran%2C%20Sragen%2C%20Jawa%20Tengah%2057282"
+    target="_blank"
+    rel="noopener noreferrer">
+    📍 Batik Adinata - Alamat Toko
+</a>
+
+
+            <a
+                href="https://wa.me/6285878153381"
+                target="_blank"
+                rel="noopener noreferrer">
+                ☎ WhatsApp
+            </a>
+
+            <a href="mailto:pashaprasati29@gmail.com">
+                ✉ Email
+            </a>
+        </div>
+
+        <!-- KOLOM 4: IKUTI KAMI -->
+        <div class="footer-column">
+            <b>Ikuti Kami</b>
+
+            <a
+                href="https://www.instagram.com/prasa_sti/"
+                target="_blank"
+                rel="noopener noreferrer">
+                Instagram ↗
+            </a>
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+        <p>
+            © 2026 Batik Adinata. Seluruh hak cipta dilindungi.
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
